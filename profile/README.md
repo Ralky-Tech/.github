@@ -44,6 +44,9 @@ Landing page institucional desenvolvida para apresentação da iniciativa acadê
 
 [Repositório Ralky-Tech](https://github.com/Ralky-Tech/ralkytech)
 
+[Acesso Landing Page](https://ralkytech.vercel.app/)
+
+
 ---
 
 ## Tecnologias utilizadas
