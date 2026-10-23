@@ -36,6 +36,8 @@ Aplicação principal do projeto, contendo o desenvolvimento da plataforma.
 
 [Repositório Reveste Kids](https://github.com/Ralky-Tech/reveste_kids)
 
+[Acesso Site Reveste Kids](https://github.com/Ralky-Tech/reveste_kids)
+
 ### Ralky-Tech
 
 Landing page institucional desenvolvida para apresentação da iniciativa acadêmica e do projeto Reveste Kids.
