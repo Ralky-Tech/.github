@@ -36,7 +36,7 @@ Aplicação principal do projeto, contendo o desenvolvimento da plataforma.
 
 [Repositório Reveste Kids](https://github.com/Ralky-Tech/reveste_kids)
 
-[Acesso Site Reveste Kids](https://github.com/Ralky-Tech/reveste_kids)
+[Acesso Site Reveste Kids](https://reveste-kids-sepia.vercel.app/)
 
 ### Ralky-Tech
 
