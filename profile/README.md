@@ -16,15 +16,16 @@ A aplicação permite o cadastro de roupas, a visualização de peças disponibi
 
 ### Principais funcionalidades
 
-- Cadastro e autenticação de usuários
-- Cadastro de roupas com imagens
-- Feed para visualização das peças
-- Sistema de interesses e matches
-- Chat entre usuários
-- Central de notificações
-- Busca de closets
-- Interface responsiva
+- Cadastro e autenticação tradicional com JWT
+- Login com Google no frontend web
+- Cadastro de roupas com imagens e vídeos
+- Feed interativo inspirado no TikTok
+- Curtidas, interesses e matches
+- Chat e notificações em tempo real
+- Busca de closets, pesquisa de peças e filtros
 - Tema claro e escuro
+- Interface web responsiva
+- Aplicativo mobile desenvolvido com React Native, Expo e TypeScript
 
 ---
 
@@ -51,49 +52,37 @@ Landing page institucional desenvolvida para apresentação da iniciativa acadê
 
 ## Tecnologias utilizadas
 
-### Front-end
-
-- React
-- Vite
-- JavaScript
-- HTML
-- CSS
-
-### Back-end
-
-- Node.js
-- Express
-- Socket.IO
-- JWT
-
-### Banco de Dados
-
-- MongoDB
-- MongoDB Atlas
-
-### Infraestrutura e Deploy
-
-- Vercel
-- Render
-- Cloudinary
-
-### Desenvolvimento e Versionamento
-
-- Git
-- GitHub
-- Visual Studio Code
+| Camada / finalidade | Tecnologias / serviços |
+| --- | --- |
+| Frontend web | React, Vite e React Router; JavaScript, HTML e CSS |
+| Mobile | React Native, Expo, Expo Router e TypeScript |
+| Backend | Node.js, Express e Mongoose |
+| Autenticação | JWT e Google OAuth 2.0 com validação de ID Token no login Google do frontend web |
+| Banco de dados | MongoDB Atlas |
+| Armazenamento de mídia | Cloudinary (imagens e vídeos) |
+| Comunicação em tempo real | Socket.IO |
+| Documentação da API | Swagger / OpenAPI |
+| Hospedagem | Vercel (frontend web) e Render (API backend) |
+| Desenvolvimento local | Docker e Docker Compose |
+| Integração contínua | GitHub Actions para testes, lint, build e validações Docker |
+| Qualidade | ESLint, Husky e testes automatizados |
+| Desenvolvimento e versionamento | Git, GitHub e Visual Studio Code |
 
 ---
 
 ## Arquitetura
 
-O projeto foi desenvolvido utilizando uma arquitetura com separação entre front-end, back-end e banco de dados.
+O projeto foi desenvolvido utilizando uma arquitetura com separação entre frontend web, aplicativo mobile, API backend e banco de dados.
 
-O front-end é responsável pela interface e interação com o usuário, enquanto o back-end disponibiliza os serviços e regras de negócio por meio de uma API.
+O **frontend web**, desenvolvido com React e Vite, é hospedado na **Vercel**. O **aplicativo mobile** é desenvolvido com React Native, Expo e TypeScript. Ambos consomem a **API backend**, desenvolvida com Node.js e Express e hospedada no **Render**, que disponibiliza os serviços e as regras de negócio.
 
-O **MongoDB Atlas** é utilizado para persistência dos dados da aplicação.
+O **MongoDB Atlas** é utilizado para persistência dos dados da aplicação, enquanto o **Cloudinary** armazena as imagens e os vídeos das peças.
 
-Para funcionalidades de comunicação em tempo real, como o chat entre usuários, a aplicação utiliza **Socket.IO**.
+Para funcionalidades de comunicação em tempo real, como o chat e as notificações, a aplicação utiliza **Socket.IO**.
+
+No ambiente local, **Docker Compose** executa o frontend web e o backend. O MongoDB Atlas e o Cloudinary permanecem como serviços externos, e o aplicativo Expo é executado separadamente.
+
+O **GitHub Actions** executa as verificações de integração contínua, incluindo testes, lint, build e validações Docker, sem realizar deploy automático.
 
 ---
 
